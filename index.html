@@ -4,47 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda Básica</title>
+    <title>Tienda</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header class="header">
-        <h1>Tienda</h1>
-        <div class="cart">
-            <button class="cart-btn">
-                🛒 Carrito (<span id="cart-count">0</span>)
-            </button>
+    <header>
+        <div class="container-title">
+            <h1>Tienda con carrito</h1>
+        </div>
+        <div class="cart-icon">
+            <a href="#"><img
+                    src="https://png.pngtree.com/png-clipart/20230405/original/pngtree-shopping-cart-vector-icon-design-illustration-png-image_9027633.png"
+                    alt=""></a>
         </div>
     </header>
 
-    <main class="product-container">
-        <div class="product-card">
-            <img src="https://th.bing.com/th/id/OIP.qztcdMxsLZeueKZimCG8LQHaHa?rs=1&pid=ImgDetMain" alt="Producto 1">
-            <h2>Producto 1</h2>
-            <p>$1000.00</p>
-            <button class="add-to-cart">Agregar al carrito</button>
+    <main>
+        <h1 class="titulo">Productos</h1>
+        <div class="container-productos" id="container-productos">
+
         </div>
-        <div class="product-card">
-            <img src="https://th.bing.com/th/id/R.cb4ca329ec84faa13451157cb75a8264?rik=1xNrkGYNpA8J0g&pid=ImgRaw&r=0"
-                alt="Producto 2">
-            <h2>Producto 2</h2>
-            <p>$1200.00</p>
-            <button class="add-to-cart">Agregar al carrito</button>
+
+        <div class="carrito" id="Carrito">
+            <h2>Carrito</h2>
+            <div class="productos-del-carrito"></div>
+            <div class="total-precio">
+                <p>Total: $<span id="total-precio">0</span></p>
+            </div>
+            <button class="boton-comprar">Comprar</button>
         </div>
-        <div class="product-card">
-            <img src="https://th.bing.com/th/id/R.9517b74cc14c0adbad702eb16842f5e8?rik=ngBLQx7OxKzoig&pid=ImgRaw&r=0"
-                alt="Producto 3">
-            <h2>Producto 3</h2>
-            <p>$300.00</p>
-            <button class="add-to-cart">Agregar al carrito</button>
-        </div>
+
     </main>
 
-    <footer class="footer">
-        <p>© 2024 Tienda Básica</p>
-    </footer>
     <script src="main.js"></script>
+
 </body>
 
 </html>
